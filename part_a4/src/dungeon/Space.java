@@ -1,0 +1,18 @@
+package dungeon;
+
+import java.io.Serializable;
+
+public abstract class Space implements Serializable {
+
+	/**
+	 * abstract class for description.
+	 * @return back the description for any subclass under
+	 */
+	public abstract  String getDescription();
+
+	/**
+	 * abstract class for adding the door to any subclass under space.
+	 * @param theDoor
+	 */
+	public abstract void addDoor(Door theDoor);
+}
